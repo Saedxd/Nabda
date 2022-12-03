@@ -2,21 +2,22 @@ import 'dart:typed_data';
 
 import 'package:bloc/bloc.dart';
 import 'package:testnew/Data/repository/irepository.dart';
-import 'package:testnew/UI/LoginPage/bloc/LoginScreen_Event.dart';
-import 'package:testnew/UI/LoginPage/bloc/LoginScreen_State.dart';
+import 'package:testnew/UI/HomePage/bloc/HomeScreen_Event.dart';
+import 'package:testnew/UI/HomePage/bloc/HomeScreen_State.dart';
 
 
-class LoginScreenBloc extends Bloc<LoginScreenEvent, LoginScreenState> {
+
+class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
   IRepository _repository;
 
-  LoginScreenBloc(this._repository) : super(LoginScreenState.initail());
+  HomeScreenBloc(this._repository) : super(HomeScreenState.initail());
 
   @override
-  LoginScreenState get initialState => LoginScreenState.initail();
+  HomeScreenState get initialState => HomeScreenState.initail();
 
   @override
-  Stream<LoginScreenState> mapEventToState(
-    LoginScreenEvent event,
+  Stream<HomeScreenState> mapEventToState(
+    HomeScreenEvent event,
   ) async* {
     if (event is Login) {
       try {

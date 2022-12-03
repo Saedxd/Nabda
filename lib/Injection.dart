@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names, file_names
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-import 'package:testnew/UI/LoginPage/bloc/LoginScreen_Bloc.dart';
+import 'package:testnew/UI/HomePage/bloc/HomeScreen_Bloc.dart';
 import 'Data/http_helper/Ihttp_helper.dart';
 import 'Data/http_helper/http_helper.dart';
 import 'Data/prefs_helper/iprefs_helper.dart';
@@ -30,7 +30,7 @@ Future iniGetIt() async {
 
   //factory means this dependency injection will provide us with new instance of get it everytime its called
   //so sometimes we call bloc in dispose which leads stream to close so useing the same instance that means it will be closed.
- sl.registerFactory(() => LoginScreenBloc(sl()));
+ sl.registerFactory(() => HomeScreenBloc(sl()));
 
 }
 //we use this package for dependency injection and use for connecting all our APP with each other

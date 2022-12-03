@@ -1,19 +1,19 @@
 // ignore_for_file: non_constant_identifier_names
 
-library LoginScreen_Event;
+library HomeScreen_Event;
 
 import 'dart:convert';
 import 'dart:io';
 import 'package:built_value/built_value.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-part 'LoginScreen_Event.g.dart';
+part 'HomeScreen_Event.g.dart';
 
-abstract class LoginScreenEvent{}
+abstract class HomeScreenEvent{}
 
 
 
-abstract class Login extends LoginScreenEvent
+abstract class Login extends HomeScreenEvent
     implements Built<Login, LoginBuilder> {
 
   String? get Email;

@@ -13,9 +13,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:testnew/Data/prefs_helper/iprefs_helper.dart';
 import 'package:testnew/Injection.dart';
+import 'package:testnew/UI/HomePage/pages/HomeScreen.dart';
 import 'package:theme_manager/theme_manager.dart';
-
-import '../UI/LoginPage/pages/LoginScreen.dart';
 import '../core/Language/localization/demo_localization.dart';
 import '../core/theme/theme_constants.dart';
 
@@ -387,7 +386,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
             child: MaterialApp(
               navigatorKey: navigatorKey,
               debugShowCheckedModeBanner: false,
-              home: Login(),
+              home: Home(),
               title: 'دار الطب',
               localizationsDelegates: const [
                 DemoLocalization.delegate,
