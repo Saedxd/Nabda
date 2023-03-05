@@ -74,12 +74,12 @@ try {
 //git commit -m "first commit"
 //git branch -M sub_sub
 //https://github.com/Saedxd/Bubbles/tree/sub_main
-//git remote add origin https://github.com/Saedxd/Nabda
-//git push -u origin main
+//git remote add origin https://github.com/Saedxd/Nabda/tree/main
+//git push -u origin https://github.com/Saedxd/Nabda/tree/main
 //…or push an existing repository from the command line
 
 
-//git remote add origin https://github.com/Saedxd/-.git
+//git remote add origin https://github.com/Saedxd/Nabda/tree/main
 //git branch -M main
 //git push -u origin main
 
