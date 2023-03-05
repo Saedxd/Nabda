@@ -72,7 +72,7 @@ try {
 //git init
 //git add README.md
 //git commit -m "first commit"
-//git branch -M sub_sub
+//git branch -M main
 //https://github.com/Saedxd/Bubbles/tree/sub_main
 //git remote add origin https://github.com/Saedxd/Nabda/tree/main
 //git push -u origin https://github.com/Saedxd/Nabda/tree/main
