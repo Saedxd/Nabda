@@ -1,4 +1,4 @@
-package com.example.testnew
+package com.nabda.dolphins
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -25,7 +25,7 @@ try {
 //     statusBarColor: Colors.transparent,
 //  ));
 
-  // WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp(
   //
   // );
@@ -57,8 +57,6 @@ try {
     runApp(ProviderScope(child:MyApp()));
 }
 
-
-
 //// flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs
 //// flutter pub get && flutter pub run build_runner watch
 //// flutter logs
@@ -76,7 +74,7 @@ try {
 //git commit -m "first commit"
 //git branch -M sub_sub
 //https://github.com/Saedxd/Bubbles/tree/sub_main
-//git remote add origin https://github.com/Saedxd/bubbless
+//git remote add origin https://github.com/Saedxd/Nabda
 //git push -u origin main
 //…or push an existing repository from the command line
 

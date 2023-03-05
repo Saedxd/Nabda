@@ -14,6 +14,7 @@ import 'package:in_app_update/in_app_update.dart';
 import 'package:testnew/Data/prefs_helper/iprefs_helper.dart';
 import 'package:testnew/Injection.dart';
 import 'package:testnew/UI/HomePage/pages/HomeScreen.dart';
+import 'package:testnew/UI/Splash/pages/SplashPage.dart';
 import 'package:theme_manager/theme_manager.dart';
 import '../core/Language/localization/demo_localization.dart';
 import '../core/theme/theme_constants.dart';
@@ -327,13 +328,19 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   //     }
   //   }
   // }
-
+  // Locale _locale;
+  //
+  // void setLocale(Locale value) {
+  //   setState(() {
+  //     _locale = value;
+  //   });
+  // }
   @override
   void initState() {
     WidgetsFlutterBinding.ensureInitialized();
     // initMessaging();
     // _checkVersion();
-    checkVersion();
+   // checkVersion();
     super.initState();
   }
 
@@ -386,27 +393,32 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
             child: MaterialApp(
               navigatorKey: navigatorKey,
               debugShowCheckedModeBanner: false,
-              home: Home(),
-              title: 'دار الطب',
+              // locale: Locale.fromSubtags(languageCode: 'ar'),
+              home: Splash(),
+              title: 'جمعية نبضة الخيرية',
+              supportedLocales: [
+                // Locale('en', 'US'),
+                Locale('ar', 'AR'),
+              ],
               localizationsDelegates: const [
                 DemoLocalization.delegate,
                 GlobalMaterialLocalizations.delegate,
                 GlobalWidgetsLocalizations.delegate,
                 GlobalCupertinoLocalizations.delegate
               ],
-              localeResolutionCallback: (locale, supportedLocales) {
-                for (var supportedLocale in supportedLocales) {
-                  if (supportedLocale.languageCode ==
-                      locale?.languageCode &&
-                      supportedLocale.countryCode ==
-                          locale?.countryCode) {
-                    return supportedLocale;
-                  }
-                }
-              },
+              // localeResolutionCallback: (locale, supportedLocales) {
+              //   for (var supportedLocale in supportedLocales) {
+              //     if (supportedLocale.languageCode ==
+              //         locale?.languageCode &&
+              //         supportedLocale.countryCode ==
+              //             locale?.countryCode) {
+              //       return supportedLocale;
+              //     }
+              //   }
+              // },
             ));
       },
-      designSize: Size(320, 568),
+      designSize: Size(375, 812),
 //375 , 812
     );
 
